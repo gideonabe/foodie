@@ -82,7 +82,7 @@ export default function Navbar() {
           alt="Order.uk Logo"
           width={125}
           height={45}
-          className=" md:w-auto object-contain"
+          className=" w-auto h-auto object-contain"
         />
 
         {/* Hamburger Menu - Mobile */}

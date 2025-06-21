@@ -191,7 +191,7 @@ const Hero = () => {
             />
 
             {/* Card 1 */}
-            <div className="relative top-[-10rem] md:top-[-15rem] right-[-20rem] md:right-[-23rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm z-10">
+            <div className="relative top-[-10rem] hidden md:block right-[-14rem] md:top-[-15rem] md:right-[-23rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm z-10">
 
               <span className="absolute -top-10 -right-2 text-7xl outlined-number z-0 select-none">
                 1
@@ -215,7 +215,7 @@ const Hero = () => {
 
 
             {/* Card 2 */}
-            <div className="relative top-[-8rem] right-[-18rem] md:top-[-12rem] md:right-[-28rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm pointer-events-auto z-10">
+            <div className="relative top-[-8rem] hidden md:block right-[-18rem] md:top-[-12rem] md:right-[-28rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm pointer-events-auto z-10">
 
               <span className="absolute -top-13 -right-1 text-7xl outlined-number z-0">
                 2
@@ -239,7 +239,7 @@ const Hero = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="relative bottom-[7rem] right-[-20rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm pointer-events-auto z-10">
+            <div className="relative bottom-[7rem] hidden md:block right-[-20rem] bg-white shadow-xl rounded-md p-3 w-50 md:w-64 text-sm pointer-events-auto z-10">
 
               <span className="absolute -top-12 -right-4 text-7xl outlined-number z-0 select-none">
                 3
