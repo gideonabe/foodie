@@ -1,15 +1,4 @@
 import React from 'react';
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import CustomCard from './RestaurantCard'; // Adjust path
 import RestaurantCard from './RestaurantCard';
 
   const cardData = [

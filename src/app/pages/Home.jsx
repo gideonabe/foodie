@@ -6,6 +6,7 @@ import Restaurants from '../../components/Restaurants'
 import PopularCategories from '@/components/PopularCategories'
 import PopularRestaurant from '@/components/PopularRestaurant'
 import Orderingapp from '@/components/Orderingapp'
+import POR from '@/components/POR'
 
 const Home = () => {
   return (
@@ -16,7 +17,8 @@ const Home = () => {
       {/* <Restaurants /> */}
       {/* <PopularCategories /> */}
       {/* <PopularRestaurant /> */}
-      <Orderingapp />
+      {/* <Orderingapp /> */}
+      <POR />
     </>
    
   )
