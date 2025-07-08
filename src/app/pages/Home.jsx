@@ -7,18 +7,23 @@ import PopularCategories from '@/components/PopularCategories'
 import PopularRestaurant from '@/components/PopularRestaurant'
 import Orderingapp from '@/components/Orderingapp'
 import POR from '@/components/POR'
+import Aboutus from '@/components/Aboutus'
+import Calculation from '@/components/Calculation'
 
 const Home = () => {
   return (
     <>
-      <Topnav />
-      {/* <Navbar /> */}
+      {/* https://www.figma.com/community/file/1311333346304045465 */}
+      {/* <Topnav /> */}
+      <Navbar />
       {/* <Hero /> */}
       {/* <Restaurants /> */}
       {/* <PopularCategories /> */}
       {/* <PopularRestaurant /> */}
       {/* <Orderingapp /> */}
-      <POR />
+      {/* <POR /> */}
+      {/* <Aboutus /> */}
+      <Calculation />
     </>
    
   )
