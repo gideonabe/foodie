@@ -69,6 +69,7 @@ import Image from "next/image";
 
 import { useState } from "react";
 import { FaUserCircle, FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -77,13 +78,15 @@ export default function Navbar() {
     <nav className="bg-white shadow- py-2 px-0">
       <div className="max-w-[95%] mx-auto flex items-center justify-between w-auto h-auto">
         {/* Logo */}
-        <Image 
-          src="/logo.png"
-          alt="Order.uk Logo"
-          width={125}
-          height={45}
-          className=" w-auto h-auto object-contain"
-        />
+        <Link href="/">
+          <Image 
+            src="/logo.png"
+            alt="Order.uk Logo"
+            width={125}
+            height={45}
+            className=" w-auto h-auto object-contain"
+          />
+        </Link>
 
         {/* Hamburger Menu - Mobile */}
         <div className="md:hidden">
