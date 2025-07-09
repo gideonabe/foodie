@@ -2,6 +2,7 @@ import React from 'react';
 import { LuBike } from "react-icons/lu";
 import { TbChecklist } from "react-icons/tb";
 import { FaClock } from "react-icons/fa6";
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const Restaurantdetailshero = () => {
   return (
@@ -62,11 +63,17 @@ const Restaurantdetailshero = () => {
         {/* Offers section title */}
         <div className=" max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center mt-10 md:mt-8 px-4 md:px-0 gap-4">
           <h2 className="text-lg md:text-xl font-bold">All Offers from McDonald's East London</h2>
-          <input 
-            type="text"
-            placeholder='Search from menu'
-            className='border border-gray-500 rounded-full px-4 py-2 w-full md:w-[30%]'
-          />
+          <div class="relative ">
+            <input 
+              type="text" 
+              className="pl-9 pr-14 py-2 border border-gray-300 rounded-full max-w-[100%]" 
+              placeholder="Search from menu..."
+            />
+            <AiOutlineSearch 
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" 
+              size={20}
+            />
+          </div>
         </div>
       </div>
     </section>
