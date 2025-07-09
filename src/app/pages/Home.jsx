@@ -8,22 +8,22 @@ import PopularRestaurant from '@/components/PopularRestaurant'
 import Orderingapp from '@/components/Orderingapp'
 import POR from '@/components/POR'
 import Aboutus from '@/components/Aboutus'
-import Calculation from '@/components/Calculation'
+import Totals from '@/components/Totals'
 
 const Home = () => {
   return (
     <>
       {/* https://www.figma.com/community/file/1311333346304045465 */}
-      {/* <Topnav /> */}
+      <Topnav />
       <Navbar />
-      {/* <Hero /> */}
-      {/* <Restaurants /> */}
-      {/* <PopularCategories /> */}
-      {/* <PopularRestaurant /> */}
-      {/* <Orderingapp /> */}
-      {/* <POR /> */}
-      {/* <Aboutus /> */}
-      <Calculation />
+      <Hero />
+      <Restaurants />
+      <PopularCategories />
+      <PopularRestaurant />
+      <Orderingapp />
+      <POR />
+      <Aboutus />
+      <Totals />
     </>
    
   )

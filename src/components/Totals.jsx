@@ -1,8 +1,8 @@
 import React from "react";
 
-const Calculation = () => {
+const Totals = () => {
   return (
-    <section id="calculation" className="mt-8">
+    <section id="Totals" className="mt-8">
       <div className="max-w-[95%] mx-auto">
         <div className="flex flex-col md:flex-row bg-orange-400 text-white rounded-lg overflow-hidden">
           <div className="flex flex-col items-center justify-center p-6 w-full md:w-1/4">
@@ -36,4 +36,4 @@ const Calculation = () => {
   );
 };
 
-export default Calculation;
+export default Totals;
