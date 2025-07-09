@@ -19,7 +19,7 @@ const Orderingapp = () => {
         />
 
         {/* Dark overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-black/20 z-10"></div>
 
         {/* Content Overlaid */}
         <div className="absolute inset-0 z-20 flex flex-col justify-center items-center px-4 text-center text-white">
