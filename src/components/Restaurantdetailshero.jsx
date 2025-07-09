@@ -63,7 +63,7 @@ const Restaurantdetailshero = () => {
         {/* Offers section title */}
         <div className=" max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center mt-10 md:mt-8 px-4 md:px-0 gap-4">
           <h2 className="text-lg md:text-xl font-bold">All Offers from McDonald's East London</h2>
-          <div class="relative ">
+          <div className="relative ">
             <input 
               type="text" 
               className="pl-9 pr-14 py-2 border border-gray-300 rounded-full max-w-[100%]" 
