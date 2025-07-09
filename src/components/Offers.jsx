@@ -4,7 +4,7 @@ const Offers = () => {
   return (
     <>
       <section className='bg-[#FC8A06] mb-4'>
-        <div className='max-w-[95%] mx-auto flex flex-wrap justify-between items-center py-4 text-base text-white'>
+        <div className='max-w-[95%] mx-auto flex flex-wrap justify-center md:justify-between items-center py-4 text-base text-white'>
           <p className='bg-[#03081F] rounded-full py-1 px-4'>Offers</p>
           <p className='cursor-pointer rounded-full py-1 px-4 md:hover:bg-[#03081F]'>Burgers</p>
           <p className='cursor-pointer rounded-full py-1 px-4 md:hover:bg-[#03081F]'>Fries</p>
