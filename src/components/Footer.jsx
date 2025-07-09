@@ -44,15 +44,15 @@ const Footer = () => {
             </div>
 
             {/* Column 2 - Newsletter */}
-            <div className="flex flex-col gap-3 flex-1 min-w-[400px]">
+            <div className="flex flex-col gap-3 flex-1 max-w-[100%]">
               <p className="font-semibold text-center md:text-start text-black text-[14px]">Get Exclusive Deals in your Inbox</p>
-              <div className="flex items-center bg-gray-200 rounded-full overflow-hidden">
+              <div className="flex items-center bg-gray-200 w-full rounded-full overflow-hidden">
                 <input
                   type="email"
                   placeholder="youremail@gmail.com"
                   className="flex-1 px-4 py-3 text-sm text-black bg-transparent outline-none"
                 />
-                <button className="bg-[#FC8A06] text-white font-semibold px-6 py-3 rounded-full hover:bg-orange-500 transition">
+                <button className="bg-[#FC8A06] text-sm md:text-base text-white font-semibold px-3 md:px-6 py-3 rounded-full hover:bg-orange-500 transition">
                   Subscribe
                 </button>
               </div>

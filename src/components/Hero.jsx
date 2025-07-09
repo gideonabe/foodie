@@ -43,18 +43,18 @@ const Hero = () => {
         </div>
 
         {/* Right Orange Shape */}
-        <div className="flex-1 hidden md:block items-end justify-center relative">
+        <div className="flex-1 hidden md:block items-end justify-center -bottom-4 relative pt-3">
           <Image
             src={roundedorange}
             alt="Orange Shape"
-            className="w-full h-full object-contain max-h-[100%] mt-2"
+            className="w-full h-full object-contain max-h-[100%]"
             priority
           />
         </div>
       </div>
 
       {/* Overlay Lady Holding Pizza and Info Cards */}
-      <div className="absolute top-30 right-70 h-full w-[50%] flex items-end justify-end pr-6 pb-6 pointer-events-none">
+      <div className="absolute top-30 right-75 h-full w-[50%] flex items-end justify-end pr-6 pb-6 pointer-events-none">
         <div className="relative w-full max-w-[500px]">
           <Image
             src={Ladyholdingpizza}
