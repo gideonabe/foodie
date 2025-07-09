@@ -9,6 +9,7 @@ import Orderingapp from '@/components/Orderingapp'
 import POR from '@/components/POR'
 import Aboutus from '@/components/Aboutus'
 import Totals from '@/components/Totals'
+import Footer from '@/components/Footer'
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <POR />
       <Aboutus />
       <Totals />
+      <Footer />
     </>
    
   )
