@@ -13,7 +13,7 @@ const PORCard = ({ imageUrl, subheading, heading, button, info }) => { // Add 'd
       </div>
 
       {info && ( 
-        <div className="absolute top-0 bg-white left-30 text-[#03081F] text-sm font-semibold px-4 py-[17px] rounded-bl-lg rounded-br-lg z-20">
+        <div className="absolute top-0 bg-white left-25 md:left-30 text-[#03081F] text-sm font-semibold px-4 py-1.5 md:py-[17px] rounded-bl-lg rounded-br-lg z-20">
           {info}
         </div>
       )}
@@ -22,7 +22,7 @@ const PORCard = ({ imageUrl, subheading, heading, button, info }) => { // Add 'd
       <CardContent className="absolute bottom-7 left-17 p-4 text-white z-10">
         <div className="flex flex-col mb-4">
           <p className="text-base text-[#FC8A06] font-light">{subheading}</p>
-          <p className="text-4xl font-bold leading-relaxed">{heading}</p>
+          <p className="text-3xl md:text-4xl font-bold leading-relaxed">{heading}</p>
         </div>
         <p className="text-md font-normal leading-tight text-center text-white bg-[#FC8A06] py-4 px-6 rounded-full mt-1">{button}</p>
       </CardContent>
