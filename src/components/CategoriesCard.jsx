@@ -19,7 +19,7 @@ const CategoriesCard = ({ image, title, description }) => {
 
       {/* Text Section */}
       <CardContent className="bg-[#03081F] text-left flex flex-col justify-center px-4 py-3">
-        <h3 className="font-playfair text-base font-semibold text-[#FC8A06] m-0">
+        <h3 className="font-playfair text-sm font-semibold text-[#FC8A06] m-0">
           {title}
         </h3>
         <p className="font-inter text-sm text-white leading-relaxed m-0">

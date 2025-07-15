@@ -41,8 +41,8 @@ const PopularRestaurant = () => {
     <section>
       <div className="max-w-[95%] mx-auto py-4 mt-4">
         <div>
-          <h1 className='text-2xl font-semibold'>Popular Restaurants</h1>
-          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-6'>  
+          
+          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-1'>  
             {restaurantData.map((restaurant) => (
               <PopularRestaurantCard
                 key={restaurant.id}

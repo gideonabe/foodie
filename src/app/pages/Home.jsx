@@ -21,6 +21,9 @@ const Home = () => {
         <Hero />
         <Restaurants />
         <PopularCategories />
+        <div className="max-w-[95%] mx-auto mt-6">
+          <h1 className='text-2xl font-semibold'>Popular Restaurants</h1>
+        </div>
         <PopularRestaurant />
         <Orderingapp />
         <POR />

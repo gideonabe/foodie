@@ -8,6 +8,8 @@ import BurgerCard from "@/components/BurgersCard";
 import InfoSection from "@/components/InfoSection";
 import MapCard from "@/components/MapCard";
 import CustomerReviews from "@/components/CustomerReviews";
+import PopularRestaurant from "@/components/PopularRestaurant";
+import Footer from "@/components/Footer";
 
 export default function App() {
 
@@ -156,14 +158,14 @@ export default function App() {
   return (
     <>
       <main className="relative min-h-screen w-full overflow-x-hidden">
-        {/* <Topnav /> */}
-        {/* <Navbar /> */}
-        {/* <Restaurantdetailshero /> */}
-        {/* <Offers /> */}
+        <Topnav />
+        <Navbar />
+        <Restaurantdetailshero />
+        <Offers />
 
 
         <div className="max-w-[95%] mx-auto w-full flex flex-col gap-6">
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full my-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full my-6">
             {discountData.map((discount, idx) => (
               <DiscountCard key={idx} {...discount}/>
             ))}
@@ -196,13 +198,17 @@ export default function App() {
                 <BurgerCard key={idx} {...drinks} />
               ))}
             </div>
-          </div> */}
+          </div>
 
         </div>
-        {/* <InfoSection /> */}
-        {/* <MapCard /> */}
+        <InfoSection />
+        <MapCard />
         <CustomerReviews />
-
+        <div className="max-w-[95%] mx-auto mt-6">
+          <h1 className='text-2xl font-semibold'>Similar Restaurants</h1>
+        </div>
+        <PopularRestaurant />
+        <Footer />
 
       </main>
 
