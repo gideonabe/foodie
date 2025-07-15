@@ -42,7 +42,7 @@ const Restaurants = () => {
             <div className="flex gap-10 items-center text-sm flex-wrap justify-center md:justify-end">
               <p>Vegan</p>
               <p>Sushi</p>
-              <p className="border border-orange-500 py-2 px-4 text-orange-500 rounded-full">
+              <p className="border border-[#FC8A06] py-2 px-4 text-[#FC8A06] rounded-full">
                 Pizza & Fast food
               </p>
               <p>Others</p>

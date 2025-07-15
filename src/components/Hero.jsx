@@ -25,7 +25,7 @@ const Hero = () => {
                 placeholder="e.g. EC4R 3TE"
                 className="w-full px-4 py-3 text-sm text-black outline-none"
               />
-              <button className="bg-[#FC8A06] text-white font-semibold px-4 md:px-10 py-3 rounded-full hover:bg-orange-500 transition">
+              <button className="bg-[#FC8A06] text-white font-semibold px-4 md:px-10 py-3 rounded-full hover:bg-[#FC8A06] transition">
                 Search
               </button>
             </div>

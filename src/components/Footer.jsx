@@ -52,7 +52,7 @@ const Footer = () => {
                   placeholder="youremail@gmail.com"
                   className="flex-1 px-4 py-3 text-sm text-black bg-transparent outline-none"
                 />
-                <button className="bg-[#FC8A06] text-sm md:text-base text-white font-semibold px-3 md:px-6 py-3 rounded-full hover:bg-orange-500 transition">
+                <button className="bg-[#FC8A06] text-sm md:text-base text-white font-semibold px-3 md:px-6 py-3 rounded-full hover:bg-[#FC8A06] transition">
                   Subscribe
                 </button>
               </div>

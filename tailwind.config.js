@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      // Include shadcn/ui's extended theme (colors, borderRadius, keyframes, animation)
-      // Copy this from shadcn/ui's installation guide or a new shadcn/ui project setup.
+      colors: {
+        brandOrange: '#FC8A06',
+        brandBlue: '#03081F',
+      },
     },
   },
   plugins: [

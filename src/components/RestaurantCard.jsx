@@ -5,7 +5,6 @@ const RestaurantCard = ({ imageUrl, category, description, discount }) => {
   return (
     <Link href="/restaurant">
       <Card className="relative w-full h-72 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-        {/* Your existing card content here */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${imageUrl})` }}
