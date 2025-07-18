@@ -7,9 +7,9 @@ import Image from 'next/image'
 
 const Orderingapp = () => {
   return (
-    <section>
+    <section className=''>
       {/* === Mobile Layout === */}
-      <div className="relative flex lg:hidden justify-center items-center w-full h-[420px] overflow-hidden rounded-md">
+      <div className="relative flex lg:hidden justify-center items-center w-full h-[420px] overflow-hidden rounded-md max-w-[95%] mx-auto">
         {/* Background Image (Blur) */}
         <Image
           src={friendslaughingblur}
@@ -25,7 +25,7 @@ const Orderingapp = () => {
         <div className="absolute inset-0 z-20 flex flex-col justify-center items-center px-4 text-center text-white">
           <div className="flex items-end justify-center gap-2 mb-2">
             <img src="/logo.png" alt="Logo" className="h-12" />
-            <h1 className="text-3xl text-[#FC8A06] font-semibold">ing is more</h1>
+            {/* <h1 className="text-3xl text-[#FC8A06] font-semibold">ing is more</h1> */}
           </div>
           <div className="bg-[#03081F] text-white py-2 px-6 rounded-full text-lg mb-2">
             <h2>

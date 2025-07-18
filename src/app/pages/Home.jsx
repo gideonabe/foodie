@@ -15,9 +15,15 @@ const Home = () => {
   return (
     <>
       {/* https://www.figma.com/community/file/1311333346304045465 */}
-      <main className="relative min-h-screen w-screen overflow-x-hidden">
-        <Topnav />
-        <Navbar />
+      <main className="relative min-h-screen w-full overflow-x-hidden">
+        <div className="hidden md:block ">
+          <Topnav />
+          <Navbar />
+        </div>
+        <div className="block md:hidden">
+          <Navbar />
+          <Topnav />
+        </div>
         <Hero />
         <Restaurants />
         <PopularCategories />

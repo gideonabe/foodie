@@ -2,11 +2,32 @@ import React from 'react'
 import { RiMapPin2Fill } from "react-icons/ri";
 import { FaBasketShopping } from "react-icons/fa6";
 import { IoArrowDownCircle } from "react-icons/io5";
+import Image from 'next/image';
 
 const Topnav = () => {
   return (
     <>
-      <div className='flex flex-col md:flex-row md:items-stretch justify-between items-center bg-gray-100 shadow-md  max-w-full mx-auto rounded-bl-xl rounded-br-xl gap-4 w-full min-h-10'>
+      {/* Mobile */}
+      <div className='flex flex-col'>
+        <div className='flex md:hidden flex-row items-center justify-center bg-gray-100 shadow-md max-w-full h-12'>
+          <div className='flex flex-1 items-center justify-center bg-[#FC8A06] h-full gap-2'>
+            <img src="/assets/review.png" alt="userimage" className='w-10 h-10'/>
+            <h1 className=''>Aycan</h1>
+          </div>
+          <div className='flex flex-1 bg-[#028643]  justify-center items-center gap-2 text-white px-4 py-2'>
+            <FaBasketShopping size={32}/>
+            <h1 className='font-semibold'>GBP 79.89</h1>
+          </div>
+        </div>
+        <div className='flex md:hidden items-center justify-end gap-2'>
+          <RiMapPin2Fill size={20} />
+          <h1 className='text-base'>Lution Street, N4G-00...</h1>
+        </div>
+      </div>
+
+
+      {/* Desktop */}
+      <div className='hidden md:flex flex-col md:flex-row md:items-stretch justify-between items-center bg-gray-100 shadow-md  max-w-full mx-auto rounded-bl-xl rounded-br-xl gap-4 w-full min-h-10'>
         <div className="flex items-center gap-2 text-sm ml-6 ">
           <span className="text-xl">🌟</span>
           <span className="flex items-center flex-wrap gap-1">

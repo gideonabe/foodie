@@ -93,12 +93,12 @@ const Footer = () => {
           <div className="max-w-[95%] mx-auto text-white py-4 px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-center md:text-left">
             
             {/* Left Side - Copyright */}
-            <h1 className="whitespace-nowrap">
+            <h1 className="whitespace-nowrap text-sm md:text-base">
               Order.uk Copyright {year}, All Rights Reserved.
             </h1>
 
             {/* Right Side - Links */}
-            <div className="flex flex-col md:flex-row  justify-center md:justify-end gap-x-6 gap-y-2">
+            <div className="hidden md:flex flex-col md:flex-row  justify-center md:justify-end gap-x-6 gap-y-2">
               <p className="cursor-pointer">Privacy Policy</p>
               <p className="cursor-pointer">Terms</p>
               <p className="cursor-pointer">Pricing</p>

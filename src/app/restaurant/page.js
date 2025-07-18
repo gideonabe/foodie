@@ -158,11 +158,16 @@ export default function App() {
   return (
     <>
       <main className="relative min-h-screen w-full overflow-x-hidden">
-        <Topnav />
-        <Navbar />
+        <div className="hidden md:block ">
+          <Topnav />
+          <Navbar />
+        </div>
+        <div className="block md:hidden">
+          <Navbar />
+          <Topnav />
+        </div>
         <Restaurantdetailshero />
         <Offers />
-
 
         <div className="max-w-[95%] mx-auto w-full flex flex-col gap-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full my-6">
