@@ -7,6 +7,10 @@ import { FaClock, FaCirclePlus } from "react-icons/fa6";
 import { ImSpoonKnife } from "react-icons/im";
 import DiscountCard from '@/components/DiscountCard';
 import CartCard from '@/components/CartCard';
+import { FaBasketShopping } from "react-icons/fa6";
+import { MdDeleteForever } from "react-icons/md";
+import { MdDeliveryDining } from "react-icons/md";
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 const ordering = () => {
 
@@ -97,7 +101,8 @@ const ordering = () => {
           ))}
         </section> */}
 
-        <div className='flex max-w-[95%] mx-auto w-full my-4'>
+
+        <div className='flex flex-col md:flex-row max-w-[95%] mx-auto w-full my-4'>
 
           {/* Left container */}
           <div className='flex flex-[25%] w-full flex-col justify-start items-start'>
@@ -154,13 +159,114 @@ const ordering = () => {
           </div>
 
           {/* Right Container */}
-          <div className='flex flex-[25%] w-full justify-center items-center relative'>
-            <div className="flex">
-              <span className="flex justify-center items-center gap-1 bg-orange-400 text-white px-8 py-2 text-sm rounded-sm font-medium shadow-md">
-                <FaClock size={15}/> <p className='text-white'>03:00</p>
+          <div className='flex flex-col flex-[25%] w-full h-full justify-center items-center relative mt-4'>
+            <div className="flex w-full">
+              <span className="flex justify-center items-center gap-1 bg-orange-400 text-white w-full px-4 py-6 text-sm rounded-sm font-medium shadow-md">
+                <FaClock size={20}/> <p className='text-white font-semibold'>Open until 03:00 AM</p>
               </span>
             </div>
-            
+            <div className='flex flex-col w-full bg-gray-50'>
+              <div className='flex flex-1 bg-[#028643] w-full rounded-t-lg justify-center items-center gap-2 mt-2 text-white px-4 py-6'>
+                <FaBasketShopping size={32}/>
+                <h1 className='font-semibold'>My Basket</h1>
+              </div>
+              <div className='flex w-full justify-evenly items-center p-3  gap-2 border-b border-gray-300'>
+                <p className='bg-[#FC8A06] px-3 py-2 rounded-full text-white font-semibold'>1x</p>
+                <div className='flex flex-col w-full text-sm gap-1 justify-start items-start pl-2'> 
+                  <p className='text-green-600 font-semibold'>$27.90</p>
+                  <p className='font-semibold'>12" Vegitarian Pizza</p>
+                  <p className='text-xs'>No Mushrooms + green peppers</p>
+                </div>
+                <MdDeleteForever size={40} className="text-gray-500 cursor-pointer" />
+              </div>
+              <div className='flex w-full justify-evenly items-center p-3  gap-2 border-b border-gray-300'>
+                <p className='bg-[#FC8A06] px-3 py-2 rounded-full text-white font-semibold'>1x</p>
+                <div className='flex flex-col w-full text-sm gap-1 justify-start items-start pl-2'> 
+                  <p className='text-green-600 font-semibold'>$27.90</p>
+                  <p className='font-semibold'>12" Vegitarian Pizza</p>
+                  <p className='text-xs'>No Mushrooms + green peppers</p>
+                </div>
+                <MdDeleteForever size={40} className="text-gray-500 cursor-pointer" />
+              </div>
+              <div className='flex w-full justify-evenly items-center p-3  gap-2 border-b border-gray-300'>
+                <p className='bg-[#FC8A06] px-3 py-2 rounded-full text-white font-semibold'>1x</p>
+                <div className='flex flex-col w-full text-sm gap-1 justify-start items-start pl-2'> 
+                  <p className='text-green-600 font-semibold'>$27.90</p>
+                  <p className='font-semibold'>12" Vegitarian Pizza</p>
+                  <p className='text-xs'>No Mushrooms + green peppers</p>
+                </div>
+                <MdDeleteForever size={40} className="text-red-500 cursor-pointer" />
+              </div>
+              <div className='flex w-full justify-evenly items-center p-3  gap-2 border-b border-gray-300'>
+                <p className='bg-[#FC8A06] px-3 py-2 rounded-full text-white font-semibold'>1x</p>
+                <div className='flex flex-col w-full text-sm gap-1 justify-start items-start pl-2'> 
+                  <p className='text-green-600 font-semibold'>$27.90</p>
+                  <p className='font-semibold'>12" Vegitarian Pizza</p>
+                  <p className='text-xs'>No Mushrooms + green peppers</p>
+                </div>
+                <MdDeleteForever size={40} className="text-gray-500 cursor-pointer" />
+              </div>
+              <div className='flex flex-col w-full justify-center items-start px-4 py-6 gap-2 border-b border-gray-300'>
+                <div className='flex w-full justify-between items-center'>
+                  <p className='font-semibold'>Sub Total: </p>
+                  <p className=''>$127.90</p>
+                </div>
+                <div className='flex w-full justify-between items-center'>
+                  <p className='font-semibold'>Discounts: </p>
+                  <p className=' '>-3.00</p>
+                </div>
+                <div className='flex w-full justify-between items-center'>
+                  <p className='font-semibold'>Delivery Fee: </p>
+                  <p className=' '>2.50</p>
+                </div>
+              </div>
+              <div className='flex flex-col w-full justify-center items-center p-4 gap-4 border-b border-gray-300'>
+                <div className='flex w-full justify-between items-center px-4 py-4 gap-2 rounded-lg bg-orange-300 text-white'>
+                  <p>Total Pay</p>
+                  <p className='font-bold text-xl'>$127.90</p>
+                </div>
+                <div className="relative mt-2 w-full">
+                  <input 
+                    type="text" 
+                    className="pl-5 pr-10 py-2 border w-full border-gray-300 rounded-full max-w-[100%]" 
+                    placeholder="Choose your free item"
+                  />
+                  <FaArrowCircleDown 
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" 
+                    size={20}
+                  />
+                </div>
+                <div className="relative mb-4 w-full">
+                  <input 
+                    type="text" 
+                    className="pl-5 pr-10 py-2 border w-full border-gray-300 rounded-full max-w-[100%]" 
+                    placeholder="Apply coupon code here"
+                  />
+                  <FaArrowCircleDown 
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" 
+                    size={20}
+                  />
+                </div>
+              </div>
+              <div className='flex flex-col w-full justify-center items-center p-4 gap-4'>
+                <div className='flex justify-center items-center gap-4'>
+                  <div className='flex flex-col justify-center items-center cursor-pointer bg-gray-100 border border-gray-400 rounded-lg p-2 text-sm'>
+                    <MdDeliveryDining size={30} className="text-green-500 cursor-pointer"/>
+                    <p>Delivery</p>
+                    <p>Starts at 17:50</p>
+                  </div>
+                  <div className='flex flex-col justify-center items-center cursor-pointer border-l border-gray-300 p-2 text-sm'>
+                    <MdDeliveryDining size={30} className="text-green-500 cursor-pointer"/>
+                    <p>Collection</p>
+                    <p>Starts at 17:50</p>
+                  </div>
+                </div>
+                <div className='relative flex w-full justify-center items-center bg-red-400 text-white px-4 py-3 rounded-lg gap-2 cursor-pointer'>
+                  <FaCircleArrowRight size={25} className="absolute left-5 text-white cursor-pointer" />
+                  <p className='text-center text-xl'>Checkout</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         

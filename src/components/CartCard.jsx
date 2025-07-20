@@ -33,15 +33,15 @@ const CartCard = ({
       </div>
 
       {/* Sizes */}
-      <div className='my-4 grid grid-cols-3 gap-2'>
+      <div className='my-4 grid grid-cols-2 md:grid-cols-3 gap-2'>
         {sizes.map((size, index) => (
           <div
             key={index}
             className={`items-center justify-center relative border rounded-sm text-sm font-medium px-2 py-3 ${
               size.active ? 'bg-[#03081F] text-white' : 'hover:bg-[#03081F] hover:text-white'
-            } ${size.fullWidth ? 'w-62' : ''}`}
+            } ${size.fullWidth ? 'md:w-62' : ''}`}
           >
-            <p>{size.label}</p>
+            <p className='text-xs md:text-base'>{size.label}</p>
             <span className='absolute bg-green-700 hover:bg-green-800 py-1 px-2 right-3 rounded-sm top-1/2 transform -translate-y-1/2 text-white cursor-pointer'>
               ${size.price}
             </span>
