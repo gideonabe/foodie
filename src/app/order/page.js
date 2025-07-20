@@ -11,6 +11,11 @@ import { FaBasketShopping } from "react-icons/fa6";
 import { MdDeleteForever } from "react-icons/md";
 import { MdDeliveryDining } from "react-icons/md";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import InfoSection from '@/components/InfoSection';
+import MapCard from '@/components/MapCard';
+import CustomerReviews from '@/components/CustomerReviews';
+import PopularRestaurant from '@/components/PopularRestaurant';
+import Footer from '@/components/Footer';
 
 const ordering = () => {
 
@@ -85,21 +90,21 @@ const ordering = () => {
   return (
     <>
       <main>
-        {/* <div className="hidden md:block ">
+        <div className="hidden md:block ">
           <Topnav />
           <Navbar />
         </div>
         <div className="block md:hidden">
           <Navbar />
           <Topnav />
-        </div> */}
-        {/* <section className="bg-white my-6">
+        </div> 
+        <section className="bg-white my-6">
           {details.map((detail, index) => (
             <RestaurantdetailsheroCard
               key={index} {...detail}
             />
           ))}
-        </section> */}
+        </section>
 
 
         <div className='flex flex-col md:flex-row max-w-[95%] mx-auto w-full my-4'>
@@ -261,7 +266,7 @@ const ordering = () => {
                     <p>Starts at 17:50</p>
                   </div>
                 </div>
-                <div className='relative flex w-full justify-center items-center bg-red-400 text-white px-4 py-3 rounded-lg gap-2 cursor-pointer'>
+                <div className='relative flex w-full justify-center items-center bg-green-500 text-white px-4 py-3 rounded-lg gap-2 cursor-pointer'>
                   <FaCircleArrowRight size={25} className="absolute left-5 text-white cursor-pointer" />
                   <p className='text-center text-xl'>Checkout</p>
                 </div>
@@ -271,7 +276,14 @@ const ordering = () => {
         </div>
         
         
-        
+        <InfoSection />
+        <MapCard />
+        <CustomerReviews />
+        <div className="max-w-[95%] mx-auto mt-6">
+          <h1 className='text-2xl font-semibold'>Similar Restaurants</h1>
+        </div>
+        <PopularRestaurant />
+        <Footer />
         
 
       </main>
