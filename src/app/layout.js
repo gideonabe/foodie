@@ -21,6 +21,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Foodie",
   description: "A food delivery app",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
