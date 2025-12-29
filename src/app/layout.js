@@ -19,7 +19,7 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: "Foodie",
+  title: "OrderUK",
   description: "A food delivery app",
   icons: {
     icon: "/logo.png",
